@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><h1>My Business Products</h1></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="https://wa.me/255692350076">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="user-details">
+            <h2>User Details</h2>
+            <form id="user-form">
+                <label for="user_name">Full Name:</label><br>
+                <input type="text" id="user_name" name="user_name" required><br><br>
+                <label for="phone_number">Phone Number:</label><br>
+                <input type="text" id="phone_number" name="phone_number" required><br><br>
+            </form>
+        </section>
+
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img src="es plus.jpg" alt="SCIENTIFIC CALCULATOR">
+                    <h3>MS PLUS calculator</h3>
+                    <p>TZ 35,000</p>
+                    <button onclick="addToCart('MS PLUS calculator', 35000)">Add to Cart</button>
+                </div>
+                <!-- Product 2 -->
+                <div class="product">
+                    <img src="jbl.jpg" alt="EAR PODS">
+                    <h3>JBL</h3>
+                    <p>TZ 20,000</p>
+                    <button onclick="addToCart('JBL', 20000)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="es plus.jpg" alt="SCIENTIFIC CALCULATOR">
+                    <h3>MS PLUS calculator</h3>
+                    <p>TZ 35,000</p>
+                    <button onclick="addToCart('MS PLUS calculator', 35000)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="es plus.jpg" alt="SCIENTIFIC CALCULATOR">
+                    <h3>MS PLUS calculator</h3>
+                    <p>TZ 35,000</p>
+                    <button onclick="addToCart('MS PLUS calculator', 35000)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="es plus.jpg" alt="SCIENTIFIC CALCULATOR">
+                    <h3>MS PLUS calculator</h3>
+                    <p>TZ 35,000</p>
+                    <button onclick="addToCart('MS PLUS calculator', 35000)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="es plus.jpg" alt="SCIENTIFIC CALCULATOR">
+                    <h3>MS PLUS calculator</h3>
+                    <p>TZ 35,000</p>
+                    <button onclick="addToCart('MS PLUS calculator', 35000)">Add to Cart</button>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+
+            <div id="cart-summary">
+                <h4>Cart Summary</h4>
+                <div id="cart-items">No items in cart</div>
+                <h4 id="cart-total">Total: TZ 0.00</h4>
+                <button onclick="submitCart()">Submit Cart</button>
+            </div>
+        </section>
+
+        <section id="slideshow">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="jbl.jpg" style="width:100%">
+                </div>
+                <div class="slide fade">
+                    <img src="es plus.jpg" style="width:100%">
+                </div>
+                <div class="slide fade">
+                    <img src="R9.jpg" style="width:100%">
+                </div>
+                <div class="slide fade">
+                    <img src="watch.jpg" style="width:100%">
+                </div>
+                <div class="slide fade">
+                    <img src="pro9.jpg" style="width:100%">
+                </div>
+                <div class="slide fade">
+                    <img src="jbl.jpg" style="width:100%">
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+        </section>
+        
+
+    </main> 
+       
+    <footer>
+        <p>Contact us: <a href="mailto:aziziiddi555@gmail.com">Email</a></p>
+        <p>Chat on WhatsApp: <a href="https://wa.me/255692350076">Click here</a></p>
+        <p>&copy; 2024 My Business</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
